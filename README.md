@@ -1,12 +1,93 @@
-# React + Vite
+# Frontend Node con React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Este proyecto es el frontend de una aplicación desarrollada con **React** y **Vite**, utilizando una arquitectura modular para manejar productos y usuarios. Es parte de un sistema fullstack que se conecta con un backend hecho en Node.js.
 
-Currently, two official plugins are available:
+🔗 Repositorio: [https://github.com/Danilo1685/frontNode](https://github.com/Danilo1685/frontNode)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Tecnologías utilizadas
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- ⚛️ React 19
+- ⚡ Vite 6
+- 🎨 Tailwind CSS
+- 📄 jsPDF y @react-pdf/renderer para generación de PDF
+- 📡 Axios para consumo de APIs
+- 🧰 Modularización por componentes y vistas
+- 🔧 ESLint + PostCSS
+
+---
+
+## 📁 Estructura del proyecto
+
+```
+📁 public/images       # Imágenes públicas accesibles desde el navegador
+📁 src
+ ├── 📁 assets         # Recursos estáticos personalizados
+ ├── 📁 components     # Componentes reutilizables
+ │    ├── 📁 Productos  # Componentes relacionados a productos
+ │    ├── 📁 User       # Componentes relacionados a usuarios
+ │    └── ExportPdfButton.jsx
+ ├── 📁 services       # Servicios que manejan la lógica de conexión con APIs
+ ├── 📁 views          # Vistas principales para navegación
+ ├── App.jsx           # Componente raíz
+ ├── main.jsx          # Punto de entrada de React
+ ├── index.css         # Estilos globales
+ └── App.css           # Estilos del componente principal
+```
+
+---
+
+## 🛠 Instalación y ejecución
+
+1. Clona el repositorio:
+
+```bash
+git clone https://github.com/Danilo1685/frontNode.git
+```
+
+2. Instala las dependencias:
+
+```bash
+cd frontNode
+npm install
+```
+
+3. Inicia la aplicación:
+
+```bash
+npm run dev
+```
+
+La aplicación estará disponible en:  
+👉 `http://localhost:5173/`
+
+---
+
+## 📜 Scripts disponibles
+
+| Comando         | Descripción                            |
+|----------------|----------------------------------------|
+| `npm run dev`  | Inicia el servidor de desarrollo       |
+| `npm run build`| Compila para producción                |
+| `npm run preview` | Previsualiza la app compilada       |
+| `npm run lint` | Ejecuta el linter                      |
+
+---
+
+## 📦 Funcionalidades
+
+- ✅ ABM de productos y usuarios
+- 📄 Exportación de datos a PDF (con jsPDF y react-pdf)
+- 🔗 Consumo de servicios externos vía Axios
+- 🧩 Modularización clara por funcionalidad
+- 🎨 Estilos con Tailwind CSS
+
+---
+
+## 📌 Notas
+
+Este frontend está pensado para ser consumido junto a un backend Node.js que provee las APIs necesarias para los módulos de usuarios y productos. Asegurate de tener el backend en ejecución y configurado correctamente.
+
+---
+
